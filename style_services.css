@@ -1,0 +1,158 @@
+:root {
+    --black : black;
+    --white : white;
+    --gray  : #C4C4C4;
+    --button: #242424;
+    --aside : #313131;
+    --text  : #4C4C4C;
+}
+
+body,
+::before,
+::after {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width        : 66vw;
+    margin       : 2rem auto .75rem auto;
+    border-bottom: 1px solid var(--gray);
+}
+
+/* header */
+.navigation {
+    display    : flex;
+    align-items: center;
+}
+
+ul {
+    list-style    : none;
+    margin        : 0 0 0 auto;
+    padding       : 0;
+    display       : flex;
+    flex-direction: row;
+}
+
+ul li {
+    padding: .5rem;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color          : var(--text);
+}
+
+ul li a:hover {
+    color: var(--button);
+}
+
+/* headline */
+.highlighted {
+    width: 66%;
+}
+
+.headline {
+    position: relative;
+}
+
+.city_img img {
+    width : 100%;
+    height: 250px;
+}
+
+.cool_phrase {
+    position: absolute;
+    inset   : 6rem 0 .5rem 1.5rem;
+    width   : 45%;
+    color   : var(--white);
+}
+
+.cool_phrase h2 {
+    background-color: rgba(5, 2, 2, .5);
+    line-height     : 2rem;
+    margin          : .5rem;
+    width           : max-content;
+}
+
+.content {
+    display        : flex;
+    justify-content: space-between;
+}
+
+section h3 {
+    border-bottom: 1px solid var(--gray);
+}
+
+.gray_text {
+    color: var(--gray);
+}
+
+.articles {
+    display        : flex;
+    justify-content: space-between;
+}
+
+article {
+    width: 45%;
+}
+
+article h3 {
+    border-bottom: 1px solid var(--gray);
+}
+
+article p {
+    color    : var(--text);
+    font-size: .875rem;
+}
+
+article button {
+    color           : white;
+    background-color: var(--button);
+    border          : none;
+    padding         : 8px 10px;
+    text-transform  : uppercase;
+}
+
+
+/* aside content */
+aside {
+    width: 30%;
+}
+
+aside cite {
+    float: right;
+}
+
+aside ul {
+    list-style-type: square;
+    color          : var(--gray);
+    display        : flex;
+    flex-direction : column;
+    margin-left    : 2.5rem;
+}
+
+.box {
+    width           : 100%;
+    height          : 100%;
+    background-color: var(--aside);
+}
+
+blockquote {
+    margin: .5rem 0;
+}
+
+blockquote em::before {
+    content  : open-quote;
+    color    : var(--gray);
+    font-size: 1.5rem;
+}
+
+blockquote em::after {
+    content  : close-quote;
+    color    : var(--gray);
+    font-size: 1.5rem;
+}
